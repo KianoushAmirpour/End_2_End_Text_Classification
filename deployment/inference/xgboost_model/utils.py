@@ -4,7 +4,10 @@ from typing import Any, List
 
 import pandas as pd  # type: ignore
 
-from xgboost_model.constants import COLUMNS_TO_RENAME, DATASET_DIR  # type: ignore
+from xgboost_model.constants import (
+    COLUMNS_TO_RENAME,
+    DATASET_DIR
+    )  # type: ignore
 
 
 def load_artifact(path: Path) -> Any:

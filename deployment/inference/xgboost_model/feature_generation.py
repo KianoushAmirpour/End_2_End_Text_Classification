@@ -2,7 +2,10 @@ from typing import List
 
 import pandas as pd  # type: ignore
 
-from xgboost_model.constants import ENG_STOP_WORDS, PUNCTUATIONS  # type: ignore
+from xgboost_model.constants import (
+    ENG_STOP_WORDS,
+    PUNCTUATIONS
+    )  # type: ignore
 
 
 def count_stop_words(words: List[str]) -> int:

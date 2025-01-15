@@ -173,7 +173,7 @@ cython_debug/
 
 *.csv
 *.parquet
-*.md
+todo.md
 *.pkl 
 *.b 
 *.gguf

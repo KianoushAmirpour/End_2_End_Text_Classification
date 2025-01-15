@@ -1,0 +1,6 @@
+pandas
+numpy
+feast
+nltk
+apache-airflow
+sentence-transformers

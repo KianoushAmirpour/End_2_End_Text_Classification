@@ -1,0 +1,62 @@
+
+D
+$
+__dummy"
+__dummy_idJfeature_store
+ª«ëºèìÔ·ª«ëºèìÔ·
+n
+N
+question_id*A key to fetch features for each question."idJfeature_store
+ª«ëºğÛ·ª«ëºğÛ·1"$99a41bc0-7242-46e8-a1e3-46616de360f0*€¯‰¼¨øêb2‘
+ğ
+ cleaned_stemmed_version_of_textsfeature_storequestion_id"
+cleaned"
+stemmed2€¼i:…event_timestampZdata/cleaned_stemmed.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢cleaned_stemmed_file_source@b
+id
+ª«ëº àà·ª«ëº àà·2î
+Í
+embeddings_of_textfeature_storequestion_id"
+
+embeddings2€¼i:{event_timestampZdata/embeddings.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢embeddings_file_source@b
+id
+ª«ëºèî·ª«ëºèî·2
+à
+!meta_features_extracted_from_textfeature_storequestion_id"
+	num_words"
+num_unique_words"
+num_stop_words"
+num_title_case"
+ave_length_words"
+num_characters"
+num_punctuations2€¼i:event_timestampZdata/meta_features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢meta_features_file_source@b
+id
+ª«ëºÀº÷·ª«ëºÀº÷·2Ù
+¸
+targetsfeature_storequestion_id"	
+label2€¼i:vevent_timestampZdata/target_df.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢target_file_source@b
+id
+ª«ëºø­ƒ¸ª«ëºø­ƒ¸2ß
+¾
+raw_datafeature_storequestion_id"
+post"	
+label2€¼i:qevent_timestampZdata/train.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢train_file_source@b
+id
+¤Áî»À‚õª¤Áî»À‚õªR½
+–
+,feast.infra.online_stores.sqlite.SqliteTable"f
+4/opt/feature_store/feature_repo/data/online_store.db.feature_store_cleaned_stemmed_version_of_texts
+ˆ
+,feast.infra.online_stores.sqlite.SqliteTable"X
+4/opt/feature_store/feature_repo/data/online_store.db feature_store_embeddings_of_text
+—
+,feast.infra.online_stores.sqlite.SqliteTable"g
+4/opt/feature_store/feature_repo/data/online_store.db/feature_store_meta_features_extracted_from_text
+~
+,feast.infra.online_stores.sqlite.SqliteTable"N
+4/opt/feature_store/feature_repo/data/online_store.dbfeature_store_raw_data
+}
+,feast.infra.online_stores.sqlite.SqliteTable"M
+4/opt/feature_store/feature_repo/data/online_store.dbfeature_store_targetsb‘event_timestampZdata/meta_features.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢meta_features_file_sourceªfeature_storeb•event_timestampZdata/cleaned_stemmed.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢cleaned_stemmed_file_sourceªfeature_storeb‹event_timestampZdata/embeddings.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢embeddings_file_sourceªfeature_storeb†event_timestampZdata/target_df.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢target_file_sourceªfeature_storebevent_timestampZdata/train.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢train_file_sourceªfeature_storeŠH
+*
+feature_storeEnd to end feature store.
+ª«ëºøµØª«ëºøµØ

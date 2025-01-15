@@ -1,0 +1,9 @@
+feast
+pandas
+scikit-learn
+xgboost
+transformers
+mlflow
+boto3
+pyyaml
+hyperopt

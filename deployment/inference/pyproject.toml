@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xgboost_model"
+version = "1.0.0"
+description = "Toxic comment classifier"
+requires-python = ">=3.8"
+license = { text = "BSD-3-Clause" }
+authors = [{name = "KianoushAmirpour"}]
+classifiers = [
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.pytest.ini_options]
+minversion = "2.0"
+addopts = "-rfEX -p pytester --strict-markers"
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test", "Acceptance"]
+python_functions = ["test"]
+testpaths = ["tests"]
+xfail_strict = true
+filterwarnings = [
+    "error",
+    "default:Using or importing the ABCs:DeprecationWarning:unittest2.*",
+    "default:Using or importing the ABCs:DeprecationWarning:pyparsing.*",
+    "default:the imp module is deprecated in favour of importlib:DeprecationWarning:nose.*",
+    "ignore:The distutils package is deprecated:DeprecationWarning",
+    "ignore:.*U.*mode is deprecated:DeprecationWarning:(?!(pytest|_pytest))",
+    "ignore:.*type argument to addoption.*:DeprecationWarning",
+    "ignore:.*inspect.getargspec.*deprecated, use inspect.signature.*:DeprecationWarning",
+    "ignore::pytest.PytestExperimentalApiWarning",
+    "default:invalid escape sequence:DeprecationWarning",
+    "ignore:_pytest.warning_types.PytestUnknownMarkWarning",
+]
+
+
+[tool.black]
+target-version = ['py311']
+line-length = 150
+
+[tool.isort]
+profile = "black"
+skip = "migrations"
+
+
+[tool.flake8]
+max-line-length = 150
+extend-ignore = ["E203", "W503"]
+exclude = [".git", "env"]

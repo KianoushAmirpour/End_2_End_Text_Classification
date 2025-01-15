@@ -1,0 +1,19 @@
+include *.txt
+include *.md
+include *.pkl
+include *.b
+recursive-include ./xgboost_model/*
+
+include ./xgboost_model/datasets/test.csv
+include ./xgboost_model/artifacts/*.pkl
+include ./xgboost_model/artifacts/*.b
+include ./xgboost_model/VERSION
+
+include ./requirements/requirements.txt
+include ./requirements/requirements_test.txt
+include ./requirements/requirements_type.txt
+exclude *.log
+exclude *.cfg
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
